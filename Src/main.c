@@ -166,7 +166,7 @@ int main(void)
       leds_off();
       HAL_TIM_Base_Start_IT(&htim2);
       // HAL_GPIO_WritePin(GREEN_GPIO, GREEN_PIN, GPIO_PIN_SET);
-      HAL_UART_Transmit(&huart3, "flash green", 5, HAL_MAX_DELAY);
+      HAL_UART_Transmit(&huart3, "flash green", 11, HAL_MAX_DELAY);
       HAL_UART_Transmit(&huart3, "\r\n", 2, HAL_MAX_DELAY);
     } else if (!strcmp(recievedMessage, "red")) {
     	// solid red means auto mode
